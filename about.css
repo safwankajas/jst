@@ -1,0 +1,100 @@
+@import url( 'https://fonts.googleapis.com/css?family=open+sans:400,600,700$display=swap');
+*
+{
+    font-family: 'open sana',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111519;
+}
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #a80404;
+    border-radius: 38% 62% 37% / 41% 44% 56% 59% ;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.square:hover span:nth-child(1)
+{
+    background: #a8040479;
+    
+}
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #a80404;
+    border-radius: 38% 62% 37% / 41% 44% 56% 59% ;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.square:hover span:nth-child(2)
+{
+    background: #a8040479;
+    
+}
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #a80404fa;
+    border-radius: 38% 62% 37% / 41% 44% 56% 59% ;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+.square:hover span:nth-child(3)
+{
+    background: #a8040479;
+    
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+   
+}
+@keyframes animate2{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+   
+}
+.content{
+    position: relative;
+    padding: 40px 60px;
+    text-align: center; 
+    transition: .5s;
+    z-index: 1000;
+}
